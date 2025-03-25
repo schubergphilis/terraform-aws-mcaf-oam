@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 module "oam_link" {
-  source = "../.."
+  source = "../../modules/link"
 
   # provide the sink arn, required
   sink_arn = "arn:aws:oam:eu-west-1:123456789012:sink/12345678-aaaa-bbbb-cccc-123456789012"

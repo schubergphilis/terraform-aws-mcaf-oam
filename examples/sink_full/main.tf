@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 module "oam_sink" {
-  source = "../.."
+  source = "../../modules/sink"
 
   # override default name
   name = "sink"
