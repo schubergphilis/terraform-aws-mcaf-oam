@@ -22,14 +22,14 @@ Please visit the annotated examples in the `./examples/` folder. They will expla
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.9 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.72 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | ~> 1.9 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.72 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.72 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 5.72 |
 
 ## Modules
 
