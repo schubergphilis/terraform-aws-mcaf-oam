@@ -4,18 +4,6 @@ variable "label_template" {
   default     = "$AccountName"
 }
 
-variable "resource_types" {
-  type = object({
-    insights          = optional(bool, false)
-    internet_monitors = optional(bool, false)
-    logs              = optional(bool, false)
-    metrics           = optional(bool, false)
-    traces            = optional(bool, false)
-  })
-  description = "Specify resource types for the link"
-  default     = {}
-}
-
 variable "log_group_config" {
   type = object({
     explicit_log_groups = optional(list(string), [])
@@ -197,6 +185,18 @@ variable "metric_config" {
     include_custom_namespaces = optional(bool, false)
   })
   description = "Specify AWS namespaces to include in MetricConfiguration and whether to include custom namespaces."
+  default     = {}
+}
+
+variable "resource_types" {
+  type = object({
+    insights          = optional(bool, false)
+    internet_monitors = optional(bool, false)
+    logs              = optional(bool, false)
+    metrics           = optional(bool, false)
+    traces            = optional(bool, false)
+  })
+  description = "Specify resource types for the link"
   default     = {}
 }
 

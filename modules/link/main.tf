@@ -6,9 +6,11 @@ resource "aws_oam_link" "default" {
 
   dynamic "link_configuration" {
     for_each = local.link_configuration_enabled ? [true] : []
+
     content {
       dynamic "log_group_configuration" {
         for_each = local.link_configuration_log_enabled ? [true] : []
+
         content {
           filter = local.log_group_query
         }
@@ -16,6 +18,7 @@ resource "aws_oam_link" "default" {
 
       dynamic "metric_configuration" {
         for_each = local.link_configuration_metrics_enabled ? [true] : []
+
         content {
           filter = local.metric_query
         }
