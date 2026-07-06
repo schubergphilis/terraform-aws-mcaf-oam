@@ -1,3 +1,9 @@
+<!-- migrate-repo:banner -->
+> [!IMPORTANT]
+> **This repository has moved to [`schubergphilis-ep/terraform-aws-mcaf-oam`](https://github.com/schubergphilis-ep/terraform-aws-mcaf-oam).**
+> Please update your references and use the new location for issues, PRs, and contributions.
+<!-- migrate-repo:banner -->
+
 # terraform-aws-oam
 
 Terraform modules for AWS Observability Access Manager settings.
